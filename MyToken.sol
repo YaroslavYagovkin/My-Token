@@ -19,7 +19,7 @@ contract Ownable {
   }
 }
 
-contract CoinTour is Ownable {
+contract Example is Ownable {
     
     string public  name  = "Exsample Token";
     
@@ -47,7 +47,7 @@ contract CoinTour is Ownable {
     
     mapping (address => mapping(address => uint)) allowed;
     
-    function CoinTour() public {
+    function Example() public {
         balances[commandAddress] = forCommand;
         balances[owner] = totalSupply-forCommand;
     }
